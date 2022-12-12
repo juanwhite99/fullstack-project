@@ -25,4 +25,8 @@ ng g m components/pages/characters/characters-details -m=app --route character-d
 ng g m components/pages/about/about -m=app --route about
 ```
 
+Adding angular services
+```
+ng g s shared/services/data
+```
 
