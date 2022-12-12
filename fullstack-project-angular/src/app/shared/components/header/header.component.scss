@@ -1,0 +1,15 @@
+header {
+    background-color: rgb(75, 75, 239);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    span {
+        margin: 1rem;
+    }
+}
+
+a {
+    color: white;
+}

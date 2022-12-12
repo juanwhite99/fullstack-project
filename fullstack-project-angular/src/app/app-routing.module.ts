@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'characters',
+    redirectTo: 'characters-list',
     pathMatch: 'full'
   },
   {
@@ -21,7 +21,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'character-list',
+    path: 'characters-list',
     loadChildren: () =>
       import(
         './components/pages/characters/characters-list/characters-list.module'
