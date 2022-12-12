@@ -1,8 +1,10 @@
 # FullstackProjectAngular
 
 Installing Apollo-Angular
+https://github.com/kamilkisiela/apollo-angular
 ```
-ng add apollo-angular
+npm i @apollo/client
+npm i graphql
 ```
 
 Adding angular modules and components
