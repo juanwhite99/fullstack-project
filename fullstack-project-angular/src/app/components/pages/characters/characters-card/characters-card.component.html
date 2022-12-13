@@ -1,1 +1,17 @@
-<p>characters-card works!</p>
+<article>
+    <a [routerLink]="['/character-details', character.id]">
+        <figure>
+            <img rel="preload" as="image" width="300" height="300" [src]="character.image" [alt]="character.name"
+                title="{{character.name}}">
+        </figure>
+    </a>
+    <div>
+        <figure (click)="toggleFavorite(character.id)" class="{{getIcon()}}">
+            <span class="material-symbols-outlined">favorite</span>
+        </figure>
+        <h3>{{character.name}}</h3>
+        <p><b>Status</b>: {{character.status}} </p>
+        <p><b>Species</b>: {{character.species}} </p>
+        <p><b>Gender</b>: {{character.gender}} </p>
+    </div>
+</article>

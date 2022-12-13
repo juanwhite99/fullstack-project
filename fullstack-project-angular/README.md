@@ -28,5 +28,6 @@ ng g m components/pages/about -m=app --route about
 Adding angular services
 ```
 ng g s shared/services/data
+ng g s shared/services/localStorage
 ```
 
