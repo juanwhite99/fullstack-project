@@ -38,3 +38,6 @@ Other features
 npm i ngx-toastr
 npm i ngx-infinite-scroll@14.0.0
 ```
+
+Notes:
+- https://www.azurestaticwebapps.dev/blog/configuring-swa
