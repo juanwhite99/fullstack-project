@@ -31,3 +31,8 @@ ng g s shared/services/data
 ng g s shared/services/localStorage
 ```
 
+Other features
+- https://github.com/scttcper/ngx-toastr
+```
+npm i ngx-toastr
+```
