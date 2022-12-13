@@ -33,6 +33,8 @@ ng g s shared/services/localStorage
 
 Other features
 - https://github.com/scttcper/ngx-toastr
+- https://github.com/orizens/ngx-infinite-scroll
 ```
 npm i ngx-toastr
+npm i ngx-infinite-scroll@14.0.0
 ```

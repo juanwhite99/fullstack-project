@@ -6,18 +6,19 @@ import { LocalStorageService } from '@shared/services/local-storage.service';
 @Component({
   selector: 'app-characters-list',
   templateUrl: './characters-list.component.html',
-  styleUrls: ['./characters-list.component.scss']
+  styleUrls: ['./characters-list.component.scss'],
 })
 export class CharactersListComponent {
   characters$ = this.dataSVC.characters$;
   showButton = false;
   private scrollHeight = 500;
-
+  private pageNum = 1;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private dataSVC: DataService,
-    private localStorage: LocalStorageService) { }
+    private localStorage: LocalStorageService
+  ) {}
 
   @HostListener('window:scroll')
   onWindowsScroll(): void {
@@ -28,5 +29,10 @@ export class CharactersListComponent {
 
   onScrollTop(): void {
     this.document.documentElement.scrollTop = 0;
+  }
+
+  onScrollDown(): void {
+    this.pageNum++;
+    this.dataSVC.getCharactersByPage(this.pageNum);
   }
 }
